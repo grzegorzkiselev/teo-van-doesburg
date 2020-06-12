@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>THEO VAN DOESBURG</title>
+</head>
+<body>
+    <div class="WhiteMask"></div>
+    <div class="container">
+    <div class="mask" id="lt"></div>
+    <div class="mask" id="rt"></div>
+    <div class="mask" id="lb"></div>
+    <div class="mask" id="rb"></div>
+        <div class="Rect" id="black"></div>
+        <div class="Rect" id="grey"></div>
+        <div class="Rect" id="blue"></div>
+        <div class="Rect" id="red"></div>
+        <div class="Rect" id="yellow"></div>
+    </div>
+
+<style>
+    
+    * {
+        margin: 0px;
+        padding: 0px;
+     }
+    
+    .container {
+        background-color:#DFE0DB;
+        height: 100vh;
+        width: 100vh;
+        margin: 0;
+        padding: 0;
+        z-index: 0;
+        position: relative;
+        display: flex;
+    }
+
+    body {
+        margin: 0 px !important;
+    }
+
+    .mask {
+        background-color: #767A7D;
+        height: 70.71vh;
+        width: 70.71vh;
+        transform: rotateZ(45deg);
+        margin: auto;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .mask#lt {
+        left: -35.355vh;
+        top: -35.355vh;
+    }
+    .mask#rt {
+        left: 64.645vh;
+        top: -35.355vh;
+    }
+    .mask#lb {
+        left: -35.355vh;
+        top: 64.645vh;
+    }
+    .mask#rb {
+        left: 64.645vh;
+        top: 64.645vh;
+    }
+
+    .WhiteMask {
+        position: absolute;
+        height: 100vh;
+        width: 100vh;
+        left: 100vh;
+        overflow: hidden;
+        position: fixed;
+        z-index: 100;
+        background-color: #ffffff;
+    }
+
+    .Rect#black {
+        height: 67vh;
+        width: 33.2vh;
+        background-color: #161616;
+        position: fixed;
+        z-index: 1;
+        bottom: 0px;
+    }
+
+    .Rect#grey {
+        height: 11.3vh;
+        width: 16.8vh;
+        background-color: #A79EA1;
+        position: fixed;
+        z-index: 1;
+        bottom: 0px;
+        left: 33.2vh;
+    }
+    .Rect#blue {
+        height: 33.2vh;
+        width: 50vh;
+        background-color:#1A226D;
+        position: fixed;
+        z-index: 1;
+        bottom: 0px;
+        left: 50vh;
+
+    }
+    .Rect#red {
+        height: 50vh;
+        width: 50vh;
+        background-color: #A82318;
+        position: fixed;
+        z-index: 1;
+        bottom: 33.2vh;
+        left: 33.2vh;
+    }
+    .Rect#yellow {
+        height: 16.8vh;
+        width: 25vh;
+        background-color: #DABA63;
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        left: 33.2vh;
+    }
+
+
+    @media all 
+    and (max-width: 719px) and (min-width: 0px) {
+
+        * {
+            margin: 0px;
+            padding: 0px;
+         }
+        
+        .container {
+            background-color:#DFE0DB;
+            height: 100vh;
+            width: 100vh;
+            margin: 0;
+            padding: 0;
+            z-index: 0;
+            position: relative;
+            display: flex;
+        }
+    
+        body {
+            margin: 0 px !important;
+        }
+    
+        .mask {
+            background-color: #767A7D;
+            height: 70.71vh;
+            width: 70.71vh;
+            transform: rotateZ(45deg);
+            margin: auto;
+            position: fixed;
+            z-index: 2;
+        }
+    
+        .mask#lt {
+            left: -35.355vh;
+            top: -35.355vh;
+        }
+        .mask#rt {
+            left: 64.645vh;
+            top: -35.355vh;
+        }
+        .mask#lb {
+            left: -35.355vh;
+            top: 64.645vh;
+        }
+        .mask#rb {
+            left: 64.645vh;
+            top: 64.645vh;
+        }
+    
+        .WhiteMask {
+            position: absolute;
+            height: 100vh;
+            width: 100vh;
+            left: auto;
+            top: 100vh;
+            position: fixed;
+            z-index: 100;
+            background-color: #ffffff;
+        }
+    
+        .Rect#black {
+            height: 67vh;
+            width: 33.2vh;
+            background-color: #161616;
+            position: fixed;
+            z-index: 1;
+            bottom: 77.8vh;
+        }
+    
+        .Rect#grey {
+            height: 11.3vh;
+            width: 16.8vh;
+            background-color: #A79EA1;
+            position: fixed;
+            z-index: 1;
+            bottom: 77.8vh;
+            left: 33.2vh;
+        }
+        .Rect#blue {
+            height: 33.2vh;
+            width: 50vh;
+            background-color:#1A226D;
+            position: fixed;
+            z-index: 1;
+            bottom: 77.8vh;
+            left: 50vh;
+    
+        }
+        .Rect#red {
+            height: 50vh;
+            width: 50vh;
+            background-color: #A82318;
+            position: fixed;
+            z-index: 1;
+            bottom: 111vh;
+            left: 33.2vh;
+        }
+        .Rect#yellow {
+            height: 16.8vh;
+            width: 25vh;
+            background-color: #DABA63;
+            position: fixed;
+            z-index: 1;
+            top: 0px;
+            left: 33.2vh;
+        }
+    
+        }
+
+</style>
+<script>
+
+    // на ховер над отдельным квадратом назначать случайный цвет
+    // выделить ховер над квадратом
+    // выбрать цвет
+    // применить цвет
+
+    function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+    return color;
+    }
+
+    let black = document.querySelector(".Rect#black");
+    let grey = document.querySelector(".Rect#grey");
+    let blue = document.querySelector(".Rect#blue");
+    let red = document.querySelector(".Rect#red");
+    let yellow = document.querySelector(".Rect#yellow");
+
+    black.addEventListener("click", function() {
+        black.style.background = getRandomColor();
+    });
+
+    grey.addEventListener("click", function() {
+        grey.style.background = getRandomColor();
+    });
+
+    blue.addEventListener("click", function() {
+        blue.style.background = getRandomColor();
+    });
+
+    red.addEventListener("click", function() {
+        red.style.background = getRandomColor();
+    });
+
+    yellow.addEventListener("click", function() {
+        yellow.style.background = getRandomColor();
+    });
+
+
+
+
+console.log("╭━━━┳━━━┳━━━┳━━╮");
+console.log("┃╭━╮┃╭━╮┃╭━╮┃╭╮┃");
+console.log("┃┃╱┃┃┃╱╰┫┃╱┃┃╰╯╰╮");
+console.log("┃╰━╯┃┃╱╭┫╰━╯┃╭━╮┃");
+console.log("┃╭━╮┃╰━╯┃╭━╮┃╰━╯┃");
+console.log("╰╯ ╰┻━━━┻╯ ╰┻━━━╯");
+
+</script>
+
+</body>
+</html>
