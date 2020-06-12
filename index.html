@@ -189,12 +189,14 @@
         }
     
         .Rect#black {
+            --black: 67vw;
             height: 67vw;
             width: 33.2vw;
             background-color: #161616;
             position: fixed;
             z-index: 1;
-            bottom: 100vw;
+            top: calc(100vw - var(--black));
+            bottom: auto;
         }
     
         .Rect#grey {
@@ -203,8 +205,9 @@
             background-color: #A79EA1;
             position: fixed;
             z-index: 1;
-            bottom: 100vw;
+            top: calc(100vw - 11.3vw);
             left: 34.2vw;
+            bottom: auto;
         }
 
         .Rect#blue {
@@ -213,8 +216,9 @@
             background-color:#1A226D;
             position: fixed;
             z-index: 1;
-            bottom: 100vw;
             left: 50vw;
+            top: calc(100vw - 33.2vw);
+            bottom: auto;
     
         }
         .Rect#red {
@@ -223,8 +227,9 @@
             background-color: #A82318;
             position: fixed;
             z-index: 1;
-            bottom: 133.2vw;
+            top: 17.1vw;
             left: 33.2vw;
+            bottom: auto;
         }
         .Rect#yellow {
             height: 17.1vw;
