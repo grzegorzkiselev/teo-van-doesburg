@@ -7,6 +7,7 @@
 </head>
 <body>
     <div class="WhiteMask"></div>
+    <div class="SecondWhiteMask"></div>
     <div class="container">
     <div class="mask" id="lt"></div>
     <div class="mask" id="rt"></div>
@@ -72,9 +73,20 @@
 
     .WhiteMask {
         position: absolute;
+        height: 200vh;
+        width: 200vh;
+        left: 100vh;
+        overflow: hidden;
+        position: fixed;
+        z-index: 100;
+        background-color: #ffffff;
+    }
+
+    .SecondWhiteMask {
+        position: absolute;
         height: 100vh;
         width: 100vh;
-        left: 100vh;
+        top: 100vh;
         overflow: hidden;
         position: fixed;
         z-index: 100;
@@ -185,6 +197,17 @@
             width: 100vw;
             left: auto;
             top: 100vw;
+            position: fixed;
+            z-index: 100;
+            background-color: #ffffff;
+        }
+
+        .SecondWhiteMask {
+            position: absolute;
+            height: 200vw;
+            width: 200vw;
+            left: 100vw;
+            top: auto;
             position: fixed;
             z-index: 100;
             background-color: #ffffff;
